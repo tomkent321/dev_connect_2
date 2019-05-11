@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://tomkdev:tomkdev321@cluster0-gcmm6.mongodb.net/dev2?retryWrites=true"
+  "mongoURI": "mongodb+srv://tomkdev:tomkdev321@cluster0-gcmm6.mongodb.net/dev2?retryWrites=true",
+  "jwtSecret": "Romans12:1"
 }
