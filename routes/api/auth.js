@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const auth = require('../../middleware/auth');
+const authRoute = require('../../middleware/authRoute'); //this is the auth middleware
 const User = require('../../models/User');
 const { check, validationResult } = require('express-validator/check');
 const jwt = require('jsonwebtoken');
@@ -10,7 +10,7 @@ const bcrypt = require('bcryptjs');
 // @route   GET api/auth
 // @desc    Test route
 // @access  Public
-router.get('/', auth, async (req, res) => {
+router.get('/', authRoute, async (req, res) => {
   try {
     //req.user comes from auth middleware 'decoded'
     const user = await User.findById(req.user.id).select('-password');
