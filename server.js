@@ -1,14 +1,13 @@
-const express = require('express');
 const connectDB = require('./config/db');
-
-const app = express();
+const express = require('express');
 
 // Connect Database
 
 connectDB();
+const app = express();
 
 // Init Middleware - parses body
-app.use(express.json({extended: false}));
+app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.send('Dev2 API Running'));
 
