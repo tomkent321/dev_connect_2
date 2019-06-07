@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://tomkdev:tomkdev321@cluster0-gcmm6.mongodb.net/dev2?retryWrites=true",
-  "jwtSecret": "Romans12:1"
+  "jwtSecret": "Romans12:1",
+  "githubClientId": "49ab6fac75e0f97a020c",
+  "githubSecret": "1cf658a1f7c7ba40a31c228dda609710e63e2c58"
 }
